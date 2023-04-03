@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Gluten:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Offside&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Whack-a-Rabbit</title>
+  </head>
+  <body>
+    <div class="title mb-4x">
+      <h1>Whack-a-Rabbit</h1>
+      <img
+        src="./assets/images/Rabbit-full.png"
+        alt="TRabbit full"
+        class="img--sm ml-4x"
+      />
+    </div>
+    <h1 class="score">SCORE : <span>00</span></h1>
+    <button class="btn btn-primary mb-4x" onclick="startGame()" id="btnStart">
+      Start
+    </button>
+    <div class="board">
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole">
+        <!-- <img src="./assets/images/bomb.png" alt="bomb" class="bomb" /> -->
+      </div>
+    </div>
+
+    <div class="cursor">
+      <img src="./assets/images/hammer.png" alt="" />
+    </div>
+    <div class="gameover">
+      <h1>Game Over</h1>
+      <p class="score">FINAL SCORE : <span>00</span></p>
+      <button class="btn btn-primary" onclick="restart()">Restart</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
